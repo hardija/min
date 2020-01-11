@@ -5,3 +5,6 @@
 *.srec
 *.eep
 *.lss
+.vscode
+launch.json
+.pyc
