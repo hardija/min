@@ -10,7 +10,7 @@ from min import MINTransportSerial
 # macOS USB serial ports are of the form '/dev/tty.usbmodem*'
 # Windows randomly assigns COM ports, depending on the driver for the USB serial chip.
 # Genuine FTDI chips tend to end up at the same port between reboots. YMMV.
-MIN_PORT = '/dev/tty.usbmodem1421'
+MIN_PORT = '/dev/tty.wchusbserial141410'
 
 
 def bytes_to_int32(data: bytes, big_endian=True) -> int:

@@ -615,7 +615,7 @@ class MINTransportSerial(MINTransport):
         """
         self.fake_errors = False
         try:
-            self._serial = Serial(port=port, timeout=0.1, write_timeout=1.0)
+            self._serial = Serial(port=port, baudrate=115200, timeout=0.1, write_timeout=1.0)
             self._serial.reset_input_buffer()
             self._serial.reset_output_buffer()
         except SerialException:
